@@ -1,10 +1,5 @@
 package model;
 
-FXMLLoader loader = new FXMLLoader(getClass().getResource("LoginView.fxml"));
-loader.setController(new LoginController());
-Parent root = loader.load();
-
-
 public class Agency {
 
     private Administrator loggedInUser;

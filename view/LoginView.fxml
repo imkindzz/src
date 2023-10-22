@@ -9,8 +9,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.*?>
 
-<VBox alignment="CENTER" styleClass="background" prefHeight="100.0" prefWidth="400.0" spacing="10" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="controller.LoginController">
-    <Separator/>
+<VBox  fx:controller ="controller.LoginController" alignment="CENTER" styleClass="background" prefHeight="100.0" prefWidth="400.0" spacing="10" xmlns:fx="http://javafx.com/fxml/1">
     <Label text="Login" styleClass="heading"/>
     <Separator/>
 
@@ -29,7 +28,7 @@
     <Separator/>
 
         <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
-        <Button fx:id="loginButton" text="Login" styleClass="button" onAction="#loginButtonAction"/>
+        <Button text="Login" styleClass="button" onAction="#loginButton"/>
         <Button text="Exit"  styleClass="button"/>
         </HBox>
 
