@@ -16,12 +16,12 @@
     <VBox spacing="10">
         <HBox spacing="10" alignment="CENTER">
             <Label text="Username:" styleClass="label"/>
-            <TextField promptText="Enter your username"/>
+            <TextField promptText="Enter your username" fx:id="usernameField"/>
         </HBox>
         
         <HBox spacing="10" alignment="CENTER">
             <Label text="Password:" styleClass="label"/>
-            <TextField promptText="Enter your password"/>
+            <TextField promptText="Enter your password"  fx:id="passwordField"/>
         </HBox>
     </VBox>
 

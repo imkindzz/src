@@ -11,11 +11,35 @@ import model.Administrator;
 import model.Administrators;
 import model.Exceptions.InvalidCredentialsException;
 
-public class LoginController extends Controller<Administrator>{
+public class LoginController extends Controller<Administrators>{
     @FXML
-    private void loginButton(ActionEvent e) {
-        System.out.println("Working");
+    private TextField usernameField;
+    @FXML
+    private TextField passwordField;
+
+    private Administrators administrators = new Administrators();
+
+    public void initialize() {
+        administrators.insertDummyData();
     }
 
+    @FXML
+    private void loginButton(ActionEvent event) {
+        String username = usernameField.getText();
+        String password = passwordField.getText();
+
+        try {
+            if (administrators.hasAdministrator(username, password)) {
+                Administrator admin = administrators.getAdministrator(username, password);
+                System.out.print("Login Successful" + admin.getName() + "!");
+            } else {
+                System.out.print("Invalid CredentialsPlease check your username and password.");
+            }
+        } catch (InvalidCredentialsException e) {
+            System.out.print("Invalid Credentials Please check your username and password.");
+        }
+    }
+
+    
 }
     
