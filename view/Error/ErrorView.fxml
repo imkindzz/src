@@ -11,5 +11,11 @@
 
 
 <VBox alignment="CENTER" styleClass="background" prefHeight="250.0" prefWidth="400.0" spacing="20" xmlns:fx="http://javafx.com/fxml/1">
+
+<Label text="Error" styleClass="heading"/>
+
+<stylesheets>
+        <URL value="@style.css" />
+</stylesheets>
       
 </VBox>
