@@ -21,15 +21,15 @@
         
         <HBox spacing="10" alignment="CENTER">
             <Label text="Password:" styleClass="label"/>
-            <TextField promptText="Enter your password"  fx:id="passwordField"/>
+            <PasswordField promptText="Enter your password"  fx:id="passwordField"/>
         </HBox>
     </VBox>
 
     <Separator/>
 
         <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
-        <Button text="Login" styleClass="button" onAction="#loginButton"/>
-        <Button text="Exit"  styleClass="button"/>
+        <Button text="Login" styleClass="button" onAction="#loginButton" prefWidth="200.0"/>
+        <Button text="Exit"  styleClass="button" onAction="#closeButton" prefWidth="200.0"/>
         </HBox>
 
     <stylesheets>

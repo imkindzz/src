@@ -9,6 +9,29 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.*?>
 
-<VBox alignment="CENTER" styleClass="background" prefHeight="200.0" prefWidth="800.0" spacing="20" xmlns:fx="http://javafx.com/fxml/1">
+<VBox alignment="CENTER" styleClass="background" prefHeight="200.0" prefWidth="800.0" spacing="20" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AgencyController">
+
+    <ImageView fitWidth="800" fitHeight="200" preserveRatio="true">
+        <image>
+            <Image url="/image/agency.png"/>
+        </image>
+    </ImageView>
         
+    <Separator/>
+
+    <Label fx:id="userIn" text="Welcome to the Prog2 Travel Agency" styleClass="heading"/>
+
+    <Separator/>
+
+    <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+        <Button text="Explore Flights" styleClass="button" prefWidth="200.0" onAction="#flightButton"/>
+        <Button text="Explore Destinations" styleClass="button" prefWidth="200.0" onAction="#destinationButton" />
+        <Button text="Book a Trip" styleClass="button" prefWidth="200.0" onAction="#tripButton" />
+        <Button text="Exit" styleClass="button" prefWidth="200.0" onAction="#closeButton" />
+    </HBox>
+
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+
 </VBox>

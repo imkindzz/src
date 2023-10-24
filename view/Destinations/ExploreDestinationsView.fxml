@@ -10,5 +10,30 @@
 <?import javafx.scene.control.*?>
 
 <VBox alignment="CENTER" styleClass="background" prefHeight="200.0" prefWidth="600.0" spacing="20" xmlns:fx="http://javafx.com/fxml/1">
-        
+
+    <ImageView fitWidth="600" fitHeight="200" preserveRatio="true">
+        <image>
+            <Image url="/image/destination.png"/>
+        </image>
+    </ImageView>
+
+    <Separator/>
+
+    <Label fx:id="userIn" text="Welcome to the Destinations section" styleClass="heading"/>
+
+    <Separator/>
+
+    <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+        <Button text="View All Destinations" styleClass="button" prefWidth="200.0" />
+        <Button text="View Flitered Destinations By Country" styleClass="button" prefWidth="200.0" />
+        <Button text="Add Destinations" styleClass="button" prefWidth="200.0" />
+        <Button text="Remove Destinations" styleClass="button" prefWidth="200.0" />
+        <Button text="Exit" styleClass="button" prefWidth="200.0" />
+    </HBox>
+
+    <stylesheets>
+        <URL value="@../style.css"/>
+    </stylesheets>
+
+
 </VBox>
