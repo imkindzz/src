@@ -32,6 +32,10 @@
         <Button text="Exit" styleClass="button" prefWidth="300.0" onAction="#closeButton"/>
     </HBox>
 
+    <stylesheets>
+        <URL value="@../style.css"/>
+    </stylesheets>
+
 
        
 </VBox>

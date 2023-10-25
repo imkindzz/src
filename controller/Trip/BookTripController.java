@@ -51,7 +51,7 @@ public class BookTripController extends Controller<Trip> {
 
    private void loadTrip(){
         try {
-            ViewLoader.showStage(null, "/view/Trip/DisplayTripController.fxml", "View Trip", new Stage());
+            ViewLoader.showStage(null, "/view/Trip/DisplayTripView.fxml", "View Trip", new Stage());
         } catch (IOException e) {
             e.printStackTrace();
         }
