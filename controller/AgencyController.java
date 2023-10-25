@@ -64,7 +64,7 @@ public class AgencyController extends Controller<Agency>{
     private void loadTripView() {
         try {
             stage.getIcons().add(new Image("/image/agency_icon.png"));
-            ViewLoader.showStage(null, "/view/Trip/BookTripView.fxml", "Explore Destinations", new Stage());
+            ViewLoader.showStage(null, "/view/Trip/BookTripView.fxml", "Explore Trips", new Stage());
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -9,6 +9,38 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.*?>
 
-<VBox alignment="CENTER" styleClass="background" prefHeight="800.0" prefWidth="600.0" spacing="20" xmlns:fx="http://javafx.com/fxml/1">
+<VBox alignment="CENTER" styleClass="background" prefHeight="700.0" prefWidth="600.0" spacing="20" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Flights.DisplayFlightsController">
+
+    <ImageView fitWidth="600" fitHeight="200" preserveRatio="true">
+        <image>
+            <Image url="/image/flight.png"/>
+        </image>
+    </ImageView>
+
+    <Separator/>
+
+    <Label fx:id="userIn" text="Filtered Flights" styleClass="heading"/>
+
+    <Separator/>
+
+    <Label fx:id="userIn" text="Country" styleClass="label"/>
+
+    <VBox spacing="10">
+        <HBox spacing="10" alignment="CENTER">
+            <TextField promptText="Enter country" prefWidth="600.0"/>
+        </HBox>
+    </VBox>
         
+    <ListView prefHeight="700.0" prefWidth="600.0" />
+
+    <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+        <Button text="Exit" styleClass="button" prefWidth="600.0" onAction="#closeButton"/>
+    </HBox>
+
+    <stylesheets>
+        <URL value="@../style.css"/>
+    </stylesheets>
+
+    
+       
 </VBox>

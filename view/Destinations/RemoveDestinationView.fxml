@@ -9,6 +9,41 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.*?>
 
-<VBox alignment="CENTER" styleClass="background" prefHeight="420.0" prefWidth="600.0" spacing="20" xmlns:fx="http://javafx.com/fxml/1">
-           
+<VBox alignment="CENTER" styleClass="background" prefHeight="420.0" prefWidth="600.0" spacing="20" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Destinations.ModifyDestinationsController">
+    <ImageView fitWidth="600" fitHeight="200" preserveRatio="true">
+        <image>
+            <Image url="/image/destination.png"/>
+        </image>
+    </ImageView>
+
+    <Separator/>
+
+    <Label fx:id="userIn" text="Remove a Destination" styleClass="heading"/>
+
+    <Separator/>
+
+
+    <VBox spacing="10">
+        <HBox spacing="10" alignment="CENTER">
+            <Label text="Name" styleClass="label"/>
+            <TextField promptText=""/>
+        </HBox>
+        
+        <HBox spacing="10" alignment="CENTER">
+            <Label text="Country" styleClass="label"/>
+            <TextField  promptText=""/>
+        </HBox>
+
+    </VBox>   
+
+        <Separator/>
+
+    <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+        <Button text="Remove Destination" styleClass="button" prefWidth="300.0"/>
+        <Button text="Exit" styleClass="button" prefWidth="299.0" onAction="#closeButton"/>
+    </HBox>
+
+    <stylesheets>
+        <URL value="@../style.css"/>
+    </stylesheets>          
 </VBox>

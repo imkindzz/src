@@ -11,6 +11,30 @@
 <?import javafx.scene.control.*?>
 <?import javafx.geometry.Insets?>  
 
-<VBox alignment="CENTER" styleClass="background" prefHeight="700.0" prefWidth="600.0" spacing="20" xmlns:fx="http://javafx.com/fxml/1">
+<VBox alignment="CENTER" styleClass="background" prefHeight="700.0" prefWidth="600.0" spacing="20" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Flights.DisplayFlightsController">
+
+    <ImageView fitWidth="600" fitHeight="200" preserveRatio="true">
+        <image>
+            <Image url="/image/flight.png"/>
+        </image>
+    </ImageView>
+
+    <Separator/>
+
+    <Label fx:id="userIn" text="Flights" styleClass="heading"/>
+
+    <Separator/>
+        
+    <ListView prefHeight="700.0" prefWidth="600.0" />
+
+    <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+        <Button text="Exit" styleClass="button" prefWidth="600.0" onAction="#closeButton"/>
+    </HBox>
+
+    <stylesheets>
+        <URL value="@../style.css"/>
+    </stylesheets>
+
+    
        
 </VBox>

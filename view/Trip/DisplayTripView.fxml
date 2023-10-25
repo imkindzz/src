@@ -11,6 +11,27 @@
 <?import javafx.scene.control.*?>
 <?import javafx.geometry.Insets?>  
 
-<VBox alignment="CENTER" styleClass="background" prefHeight="700.0" prefWidth="600.0" spacing="20" xmlns:fx="http://javafx.com/fxml/1">
+<VBox alignment="CENTER" styleClass="background" prefHeight="700.0" prefWidth="600.0" spacing="20" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Trip.BookTripController">
+
+    <ImageView fitWidth="600" fitHeight="200" preserveRatio="true">
+        <image>
+            <Image url="/image/trip.png"/>
+        </image>
+    </ImageView>
+
+    <Separator/>
+
+    <Label fx:id="userIn" text="Your Trip" styleClass="heading"/>
+
+    <Separator/>
+        
+    <ListView prefHeight="700.0" prefWidth="600.0" />
+
+    <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+        <Button text="View Individual" styleClass="button" prefWidth="300.0"/>
+        <Button text="Exit" styleClass="button" prefWidth="300.0" onAction="#closeButton"/>
+    </HBox>
+
+
        
 </VBox>

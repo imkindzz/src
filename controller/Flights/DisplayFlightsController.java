@@ -1,7 +1,18 @@
 package controller.Flights;
 
+import au.edu.uts.ap.javafx.Controller;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import model.Flights;
 
+public class DisplayFlightsController extends Controller<Flights>  {
 
-public class DisplayFlightsController  {
+     @FXML
+    private void closeButton(ActionEvent event) {
+        if (stage != null) {
+            stage.close();
+        }
+    }
+
     
 }

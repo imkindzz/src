@@ -24,10 +24,10 @@
     <Separator/>
 
     <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
-        <Button text="View All Flights" styleClass="button" prefWidth="200.0" />
-        <Button text="View Flights by Country" styleClass="button" prefWidth="200.0" />
-        <Button text="Add Flight" styleClass="button" prefWidth="200.0" />
-        <Button text="Remove Flight" styleClass="button" prefWidth="200.0" />
+        <Button text="View All Flights" styleClass="button" prefWidth="200.0" onAction="#flightButton" />
+        <Button text="View Flights by Country" styleClass="button" prefWidth="200.0" onAction="#fFlightButton" />
+        <Button text="Add Flight" styleClass="button" prefWidth="200.0"  onAction="#addFlightButton"/>
+        <Button text="Remove Flight" styleClass="button" prefWidth="200.0" onAction="#removeFlightButton"/>
         <Button text="Exit" styleClass="button" prefWidth="200.0" onAction="#closeButton"/>
     </HBox>
 
